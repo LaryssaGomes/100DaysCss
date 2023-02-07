@@ -1,6 +1,6 @@
 {
   "scripts":{
-    "watch:scss": "node-sass -w day02/styles/style.scss day02/styles/style.css"
+    "watch:scss": "node-sass -w extra/animationText/styles/style.scss extra/animationText/styles/style.css"
   },
   "dependencies": {
     "node-sass": "^8.0.0"
