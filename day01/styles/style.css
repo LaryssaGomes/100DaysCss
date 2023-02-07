@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, #43399F, #4EC4C9);
+  display: inline-flex; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.one {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #fff;
+  z-index: 1;
+  width: 24px;
+  height: 100px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+  .one .one::before {
+    content: '';
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    width: 24px;
+    z-index: -1;
+    height: 40px;
+    margin-left: -10px;
+    background-color: #fff;
+    transform: rotate(50deg);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+
+.zero {
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-color: #fff;
+  position: absolute;
+  border-style: solid;
+  border-width: 24px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+
+.zero-first {
+  margin-left: -10px;
+  z-index: -1;
+  display: inline-block; }
+
+.zero-second {
+  margin-left: 75px;
+  z-index: -2;
+  display: inline-block; }
+
+.texts {
+  color: #fff;
+  font-family: "Courier New", "Courier", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column; }
+
+.texts span:nth-child(1) {
+  line-height: 60px;
+  font-size: 82px; }
+
+.texts span:nth-child(2) {
+  line-height: 20px;
+  font-size: 23px;
+  letter-spacing: 0.04em; }
