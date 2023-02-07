@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #3FAF82; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.menu-icon {
+  cursor: pointer; }
+  .menu-icon div {
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    width: 80px;
+    height: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px; }
+
+.animation {
+  display: inline-block;
+  top: 50%; }
+  .animation .line-1 {
+    animation: animate-line-1 .7s both; }
+  .animation .line-2 {
+    animation: animate-line-2 .7s both; }
+  .animation .line-3 {
+    animation: animate-line-3 .7s both; }
+
+@keyframes animate-line-1 {
+  0% {
+    transform: translateY(0px) rotate(0deg); }
+  50% {
+    transform: translateY(12px) rotate(0deg); }
+  100% {
+    transform: translateY(12px) rotate(-45deg); } }
+
+@keyframes animate-line-2 {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0);
+    margin: 0 auto; } }
+
+@keyframes animate-line-3 {
+  0% {
+    transform: translateY(0px) rotate(0deg); }
+  50% {
+    transform: translateY(-12px) rotate(0deg); }
+  100% {
+    transform: translateY(-12px) rotate(45deg); } }
+
+.rev-animation {
+  display: inline-block; }
+  .rev-animation .line-1 {
+    transform: translateY(12px) rotate(-45deg);
+    animation: rev-animate-line-1 .7s both; }
+  .rev-animation .line-2 {
+    transform: scale(0);
+    margin: 0 auto;
+    animation: rev-animate-line-2 .7s both; }
+  .rev-animation .line-3 {
+    transform: translateY(-12px) rotate(45deg);
+    animation: rev-animate-line-3 .7s both; }
+
+@keyframes rev-animate-line-1 {
+  0% {
+    transform: translateY(12px) rotate(-45deg); }
+  50% {
+    transform: translateY(12px) rotate(0deg); }
+  100% {
+    transform: translateY(0px) rotate(0deg); } }
+
+@keyframes rev-animate-line-2 {
+  0% { }
+  100% {
+    transform: scale(1); } }
+
+@keyframes rev-animate-line-3 {
+  0% {
+    transform: translateY(-12px) rotate(45deg); }
+  50% {
+    transform: translateY(-12px) rotate(0deg); }
+  100% {
+    transform: translateY(10px) rotate(0deg); } }
